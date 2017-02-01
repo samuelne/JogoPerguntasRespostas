@@ -66,6 +66,7 @@ namespace JogoDesktop
 
                             Pergunta1 p1 = new Pergunta1();
                             p1.ShowDialog();
+                           
 
                         }
                         else

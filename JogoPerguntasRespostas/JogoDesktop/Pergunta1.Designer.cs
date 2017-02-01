@@ -43,7 +43,7 @@
             this.lblPergunta.Name = "lblPergunta";
             this.lblPergunta.Size = new System.Drawing.Size(262, 13);
             this.lblPergunta.TabIndex = 0;
-            this.lblPergunta.Text = "4) O software tem por objetivo em uma apresentação?";
+            this.lblPergunta.Text = "1) O software tem por objetivo em uma apresentação?";
             // 
             // rdbResposta1
             // 
