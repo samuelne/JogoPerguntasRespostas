@@ -10,32 +10,46 @@ create table tb_Jogador(
 	nome varchar(100) not null
 )
 
--- Seleciona tudo da tabela
+-- Seleciona tudo da tabela tb_Jogador
 select * from tb_Jogador
 
---Insere dentro da tabela tb_Jogador
+-- Seleciona tudo da tabela tb_Perguntas
+select * from tb_Perguntas
+
+--Insere valor dentro da tabela tb_Jogador na coluna nome
 insert into tb_Jogador(nome) values('Amanda')
 insert into tb_Jogador(nome) values('Fernanda')
 
---Criar tabela tb_Perguntas
+-- Criar tabela tb_Perguntas com as seguintes colunas, id, pergunta, resposta_correta, data
 create table tb_Perguntas(
 	id		int identity primary key,
 	pergunta			varchar(max),
 	resposta_correta	varchar (max),
+	id_jogador					int ,
 	data datetime default getdate()
 )
 
---Insere dentro da tabela tb_Jogador
+-- Insere os valores dentro da tabela tb_Jogador nas colunas pergunta, reposta_correta
 insert into tb_Perguntas (pergunta, resposta_correta) values ('1) O software tem por objetivo em uma apresentação?','O software deve simplificar a apresentação em vez de complicá-la.' )
 
+-- Deleta o id 17 da tabela tb_Jogador
 delete from tb_Jogador where id = 17
 
---Insere dentro da tabela tb_Jogador
+-- Insere dentro da tabela tb_Jogador o valor Ramón
 insert into tb_Jogador (nome) values ('Ramón')
 
---Apaga registros da tabela
+-- Apaga todos registros da tabela tb_Jogador
 delete from tb_Jogador
 
---Zera toda tabela e começa o id
+-- Zera toda tabela e começa o id do 1
 truncate table tb_Jogador
+
+-- Adicionar a columa id_jogador dentro da tabela depois que ela já foi criada
+alter table tb_Perguntas add id_jogador int
+
+-- Excluir a columa id_jogador adicionada por engano na tabela tb_Perguntas
+alter table tb_Jogador drop column id_jogador
+
+
+
 
