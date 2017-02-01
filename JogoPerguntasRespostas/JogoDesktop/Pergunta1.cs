@@ -16,5 +16,17 @@ namespace JogoDesktop
         {
             InitializeComponent();
         }
+
+        private void btnProxima_Click(object sender, EventArgs e)
+        {
+            if (rdbResposta4.Checked == true)
+            {
+                MessageBox.Show("GANHOU 1 MILHÃO DE REAIS SQN ;D");
+                    }
+            else {
+                MessageBox.Show("ERROUUUUU");
+            }
+            
+        }
     }
 }
