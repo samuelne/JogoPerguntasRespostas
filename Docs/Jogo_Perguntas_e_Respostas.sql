@@ -51,5 +51,15 @@ alter table tb_Perguntas add id_jogador int
 alter table tb_Jogador drop column id_jogador
 
 
+-- Fazer "junção" das tabelas tb_Jogador com a tb_Perguntas "onde" tb_Jogador.id = tb_Perguntas.id_jogador
+select * from tb_Jogador join tb_Perguntas on tb_Jogador.id = tb_Perguntas.id_jogador
+
+-- Identifica o ultimo insert feito em qualquer tabela
+select  @@IDENTITY
+
+-- Site para entender alguns conceitos
+--http://www.devmedia.com.br/conhecendo-os-metodos-executenonquery-executereader-e-executescalar-da-ado-net/27579
+
+
 
 
