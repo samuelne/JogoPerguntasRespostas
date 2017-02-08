@@ -41,8 +41,11 @@ insert into tb_Jogador (nome) values ('Ramón')
 -- Apaga todos registros da tabela tb_Jogador
 delete from tb_Jogador
 
--- Zera toda tabela e começa o id do 1
+-- Zera toda tabela tb_Jogador e começa o id do 1
 truncate table tb_Jogador
+
+-- Zera toda tabela tb_Perguntas e começa o id do 1
+truncate table tb_perguntas
 
 -- Adicionar a columa id_jogador dentro da tabela depois que ela já foi criada
 alter table tb_Perguntas add id_jogador int

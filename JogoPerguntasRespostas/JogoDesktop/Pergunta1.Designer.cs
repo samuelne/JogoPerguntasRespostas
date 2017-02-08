@@ -39,7 +39,7 @@
             // lblPergunta
             // 
             this.lblPergunta.AutoSize = true;
-            this.lblPergunta.Location = new System.Drawing.Point(77, 55);
+            this.lblPergunta.Location = new System.Drawing.Point(63, 46);
             this.lblPergunta.Name = "lblPergunta";
             this.lblPergunta.Size = new System.Drawing.Size(262, 13);
             this.lblPergunta.TabIndex = 0;
@@ -49,7 +49,7 @@
             // rdbResposta1
             // 
             this.rdbResposta1.AutoSize = true;
-            this.rdbResposta1.Location = new System.Drawing.Point(80, 124);
+            this.rdbResposta1.Location = new System.Drawing.Point(66, 115);
             this.rdbResposta1.Name = "rdbResposta1";
             this.rdbResposta1.Size = new System.Drawing.Size(231, 17);
             this.rdbResposta1.TabIndex = 1;
@@ -61,7 +61,7 @@
             // rdbResposta2
             // 
             this.rdbResposta2.AutoSize = true;
-            this.rdbResposta2.Location = new System.Drawing.Point(80, 158);
+            this.rdbResposta2.Location = new System.Drawing.Point(66, 149);
             this.rdbResposta2.Name = "rdbResposta2";
             this.rdbResposta2.Size = new System.Drawing.Size(236, 17);
             this.rdbResposta2.TabIndex = 2;
@@ -73,7 +73,7 @@
             // rdbResposta3
             // 
             this.rdbResposta3.AutoSize = true;
-            this.rdbResposta3.Location = new System.Drawing.Point(80, 192);
+            this.rdbResposta3.Location = new System.Drawing.Point(66, 183);
             this.rdbResposta3.Name = "rdbResposta3";
             this.rdbResposta3.Size = new System.Drawing.Size(254, 17);
             this.rdbResposta3.TabIndex = 3;
@@ -85,7 +85,7 @@
             // rdbResposta4
             // 
             this.rdbResposta4.AutoSize = true;
-            this.rdbResposta4.Location = new System.Drawing.Point(80, 228);
+            this.rdbResposta4.Location = new System.Drawing.Point(66, 219);
             this.rdbResposta4.Name = "rdbResposta4";
             this.rdbResposta4.Size = new System.Drawing.Size(339, 17);
             this.rdbResposta4.TabIndex = 4;

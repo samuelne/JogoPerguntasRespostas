@@ -51,10 +51,10 @@
             this.rdbResposta4.AutoSize = true;
             this.rdbResposta4.Location = new System.Drawing.Point(66, 219);
             this.rdbResposta4.Name = "rdbResposta4";
-            this.rdbResposta4.Size = new System.Drawing.Size(58, 17);
+            this.rdbResposta4.Size = new System.Drawing.Size(61, 17);
             this.rdbResposta4.TabIndex = 10;
             this.rdbResposta4.TabStop = true;
-            this.rdbResposta4.Text = "Marron";
+            this.rdbResposta4.Text = "Marron.";
             this.rdbResposta4.UseVisualStyleBackColor = true;
             // 
             // rdbResposta3
@@ -73,10 +73,10 @@
             this.rdbResposta2.AutoSize = true;
             this.rdbResposta2.Location = new System.Drawing.Point(66, 149);
             this.rdbResposta2.Name = "rdbResposta2";
-            this.rdbResposta2.Size = new System.Drawing.Size(50, 17);
+            this.rdbResposta2.Size = new System.Drawing.Size(53, 17);
             this.rdbResposta2.TabIndex = 8;
             this.rdbResposta2.TabStop = true;
-            this.rdbResposta2.Text = "Preto";
+            this.rdbResposta2.Text = "Preto.";
             this.rdbResposta2.UseVisualStyleBackColor = true;
             // 
             // rdbResposta1
@@ -112,7 +112,7 @@
             this.Controls.Add(this.lblPergunta3);
             this.Name = "Pergunta3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Pergunta3";
+            this.Text = "Pergunta 3";
             this.ResumeLayout(false);
             this.PerformLayout();
 
