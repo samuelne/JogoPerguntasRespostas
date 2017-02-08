@@ -44,6 +44,7 @@
             this.lblPergunta.Size = new System.Drawing.Size(262, 13);
             this.lblPergunta.TabIndex = 0;
             this.lblPergunta.Text = "1) O software tem por objetivo em uma apresentação?";
+            this.lblPergunta.Click += new System.EventHandler(this.lblPergunta_Click);
             // 
             // rdbResposta1
             // 
@@ -55,6 +56,7 @@
             this.rdbResposta1.TabStop = true;
             this.rdbResposta1.Text = "O software deve ter muitas funcionalidades.";
             this.rdbResposta1.UseVisualStyleBackColor = true;
+            this.rdbResposta1.CheckedChanged += new System.EventHandler(this.rdbResposta1_CheckedChanged);
             // 
             // rdbResposta2
             // 
@@ -66,6 +68,7 @@
             this.rdbResposta2.TabStop = true;
             this.rdbResposta2.Text = "O software deve reproduzir efeitos especiais.";
             this.rdbResposta2.UseVisualStyleBackColor = true;
+            this.rdbResposta2.CheckedChanged += new System.EventHandler(this.rdbResposta2_CheckedChanged);
             // 
             // rdbResposta3
             // 
@@ -77,6 +80,7 @@
             this.rdbResposta3.TabStop = true;
             this.rdbResposta3.Text = "O software deve mudar o foco da apresentação.";
             this.rdbResposta3.UseVisualStyleBackColor = true;
+            this.rdbResposta3.CheckedChanged += new System.EventHandler(this.rdbResposta3_CheckedChanged);
             // 
             // rdbResposta4
             // 
@@ -88,6 +92,7 @@
             this.rdbResposta4.TabStop = true;
             this.rdbResposta4.Text = "O software deve simplificar a apresentação em vez de complicá-la.";
             this.rdbResposta4.UseVisualStyleBackColor = true;
+            this.rdbResposta4.CheckedChanged += new System.EventHandler(this.rdbResposta4_CheckedChanged);
             // 
             // btnProxima
             // 

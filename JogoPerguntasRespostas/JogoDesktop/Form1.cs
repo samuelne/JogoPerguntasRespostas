@@ -56,16 +56,17 @@ namespace JogoDesktop
                     {
                         comando.Parameters.AddWithValue("NOME", txtNome.Text);
                         conexao.Open();
+                        int id_jogador;
+                        id_jogador = (int)comando.ExecuteScalar();
                         
-                                           
-                        if(comando.ExecuteNonQuery() == 1)
+
+                        
+
+                        if (id_jogador > 0)
                         {
 
 
-                            // Variavel responsavel por pegar ultimo id da tabela tb_jogador
-                            int id_jogador = (int) comando.ExecuteScalar();
-
-                            MessageBox.Show("O id do jogador inserido foi: " + id_jogador);
+                            //MessageBox.Show("O id do jogador inserido foi: " + id_jogador);
 
                             MessageBox.Show("Olá " + txtNome.Text.ToUpper() + ". Você está pronto para continuar!!!", "PLAYYYY", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
@@ -77,6 +78,12 @@ namespace JogoDesktop
 
                             Pergunta1 p1 = new Pergunta1(id_jogador);
                             p1.ShowDialog();
+
+                            Pergunta2 p2 = new Pergunta2(id_jogador);
+                            p2.ShowDialog();
+
+                            Pergunta3 p3 = new Pergunta3(id_jogador);
+                            p3.ShowDialog();
                            
 
                         }

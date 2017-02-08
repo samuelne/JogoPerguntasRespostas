@@ -2,29 +2,30 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-
 
 namespace JogoDesktop
 {
-    public partial class Pergunta1 : Form
+    public partial class Pergunta3 : Form
     {
+
         public int id_jogador_banco;
-        public Pergunta1(int id_jogador)
+
+        public Pergunta3(int id_jogador)
         {
             InitializeComponent();
             id_jogador_banco = id_jogador;
-            
         }
 
         private void btnProxima_Click(object sender, EventArgs e)
         {
-            if (rdbResposta4.Checked == true)
+
+            if (rdbResposta1.Checked == true)
             {
                 MessageBox.Show("ACERTOUUU");
 
@@ -38,17 +39,17 @@ namespace JogoDesktop
                 comando.Connection = conexao;
 
 
-                
+
                 //CRIA A VARIAVEL DE INSERCAO
                 string insert = "INSERT INTO tb_perguntas ";
                 insert += "(pergunta, resposta_correta, id_jogador)";
                 insert += " VALUES ";
                 insert += " ( ";
 
-                insert += " '" + lblPergunta.Text + "' ,";
-                insert += " '" + rdbResposta4.Text + "' ,";
+                insert += " '" + lblPergunta3.Text + "' ,";
+                insert += " '" + rdbResposta1.Text + "' ,";
                 insert += " '" + id_jogador_banco + "' ";
-                
+
 
                 insert += " ) ";
 
@@ -68,39 +69,7 @@ namespace JogoDesktop
                 conexao.Close();
 
                 this.Close();
-
-
             }
-
-
-            else {
-                MessageBox.Show("ERROUUUUU");
-            }
-            
-        }
-
-        private void rdbResposta4_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rdbResposta3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rdbResposta2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rdbResposta1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblPergunta_Click(object sender, EventArgs e)
-        {
 
         }
     }
